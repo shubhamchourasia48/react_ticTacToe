@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "./Componants/Board";
+import Board from "./Components/Board";
 import "./Styles/root.scss";
 
 export default () => (
