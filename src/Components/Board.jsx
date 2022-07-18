@@ -1,8 +1,7 @@
 import React from 'react';
 import Square from './Square';
 
-const Board = ({board, handleSquareClick}) => {
-
+const Board = ({ board, handleSquareClick }) => {
   const renderSquare = position => {
     return (
       <Square
@@ -14,10 +13,9 @@ const Board = ({board, handleSquareClick}) => {
   return (
     <div className="board">
       <div className="board-row">
-       
         {/* to connect the state and event handler or Square Component so when we click on the square we can update state we associate "board" state with Squares instead of using <Square value={0}/> we use as following */}
 
-{/*   if we handle the click event like this to change the state     
+        {/*   if we handle the click event like this to change the state     
         <Square value={board[0]} onClickHandeler={()=>{handelSquareClick(0)}} /> 
  
 we have to repeat that 9 times in each <Square...> best approach is to creat a custom function renderSquare() which will return this Square component 
